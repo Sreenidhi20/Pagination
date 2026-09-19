@@ -3,12 +3,21 @@ import math
 from fastapi import FastAPI, Depends, Query, Response, status
 from sqlalchemy.orm import Session
 from typing import Optional
+from fastapi.middleware.cors import CORSMiddleware
 
 from database import get_db
 import models
 import schemas
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/api/customers/offset", response_model=schemas.LimitOffsetPaginationResponse)
 def get_customers_offset(
