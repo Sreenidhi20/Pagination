@@ -53,7 +53,7 @@ export default function OffsetPagination() {
           <IconButton component={Link} to="/" aria-label="Back to dashboard">
             ←
           </IconButton>
-          <Typography variant="h4" component="h1" fontWeight={700}>
+          <Typography variant="h4" component="h1" sx={{ fontWeight: 700 }}>
             Offset pagination
           </Typography>
           <Typography color="text.secondary">

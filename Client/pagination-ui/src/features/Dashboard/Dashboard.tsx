@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
           gap: 6,
         }}
       >
-        <Typography variant="h3" component="h1" fontWeight={700}>
+        <Typography variant="h3" component="h1" sx={{ fontWeight: 700 }}>
           Pagination
         </Typography>
 
@@ -57,8 +57,7 @@ const Dashboard: React.FC = () => {
                 <Typography
                   variant="h5"
                   component="div"
-                  fontWeight={600}
-                  textAlign="center"
+                  sx={{ fontWeight: 600, textAlign: "center" }}
                 >
                   Offset
                 </Typography>
@@ -66,8 +65,7 @@ const Dashboard: React.FC = () => {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  textAlign="center"
-                  sx={{ mt: 1 }}
+                  sx={{ mt: 1, textAlign: "center" }}
                 >
                   Offset Pagination
                 </Typography>
@@ -95,8 +93,7 @@ const Dashboard: React.FC = () => {
                 <Typography
                   variant="h5"
                   component="div"
-                  fontWeight={600}
-                  textAlign="center"
+                  sx={{ fontWeight: 600, textAlign: "center" }}
                 >
                   Cursor
                 </Typography>
@@ -104,8 +101,7 @@ const Dashboard: React.FC = () => {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  textAlign="center"
-                  sx={{ mt: 1 }}
+                  sx={{ mt: 1, textAlign: "center" }}
                 >
                   Cursor Pagination
                 </Typography>

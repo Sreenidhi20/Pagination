@@ -66,7 +66,7 @@ export default function CursorPagination() {
           <IconButton component={Link} to="/" aria-label="Back to dashboard">
             ←
           </IconButton>
-          <Typography variant="h4" component="h1" fontWeight={700}>
+          <Typography variant="h4" component="h1" sx={{ fontWeight: 700 }}>
             Cursor pagination
           </Typography>
           <Typography color="text.secondary">
