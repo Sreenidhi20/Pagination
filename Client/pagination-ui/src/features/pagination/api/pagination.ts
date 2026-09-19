@@ -26,7 +26,7 @@ export type CursorPaginationResponse = {
   data: Customer[];
 };
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.API_URL;
 
 async function request<T>(path: string): Promise<T> {
   const response = await fetch(`${API_URL}${path}`);
